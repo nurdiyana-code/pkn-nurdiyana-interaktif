@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Modul PKn Interaktif</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<h1>Modul Interaktif Pendidikan Kewarganegaraan</h1>
+<p>Pembelajaran Digital untuk Mahasiswa</p>
+</header>
+
+<nav>
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('materi1')">Pancasila</button>
+<button onclick="showPage('materi2')">Demokrasi</button>
+<button onclick="showPage('materi3')">Hak & Kewajiban</button>
+<button onclick="showPage('quiz')">Quiz</button>
+<button onclick="showPage('sertifikat')">Sertifikat</button>
+</nav>
+
+<main>
+
+<section id="home" class="page">
+<h2>Selamat Datang</h2>
+<p>Modul ini membantu mahasiswa memahami konsep dasar Pendidikan Kewarganegaraan.</p>
+
+<div class="progress-box">
+<h3>Progress Belajar</h3>
+<div class="progress-bar">
+<div id="progress"></div>
+</div>
+<p id="progressText">0% selesai</p>
+</div>
+
+</section>
+
+<section id="materi1" class="page">
+<h2>Pancasila sebagai Dasar Negara</h2>
+<p>Pancasila merupakan dasar negara Indonesia yang menjadi landasan dalam kehidupan berbangsa dan bernegara.</p>
+<ul>
+<li>Ketuhanan Yang Maha Esa</li>
+<li>Kemanusiaan yang Adil dan Beradab</li>
+<li>Persatuan Indonesia</li>
+<li>Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan</li>
+<li>Keadilan Sosial bagi Seluruh Rakyat Indonesia</li>
+</ul>
+<button onclick="completeSection()">Tandai Selesai</button>
+</section>
+
+<section id="materi2" class="page">
+<h2>Demokrasi Indonesia</h2>
+<p>Demokrasi Indonesia dilaksanakan berdasarkan prinsip musyawarah dan perwakilan.</p>
+<ul>
+<li>Partisipasi warga negara</li>
+<li>Pemilihan umum</li>
+<li>Kebebasan berpendapat</li>
+</ul>
+<button onclick="completeSection()">Tandai Selesai</button>
+</section>
+
+<section id="materi3" class="page">
+<h2>Hak dan Kewajiban Warga Negara</h2>
+<p>Hak dan kewajiban warga negara diatur dalam UUD 1945.</p>
+<ul>
+<li>Hak memperoleh pendidikan</li>
+<li>Hak berpendapat</li>
+<li>Kewajiban menaati hukum</li>
+<li>Kewajiban menjaga persatuan</li>
+</ul>
+<button onclick="completeSection()">Tandai Selesai</button>
+</section>
+
+<section id="quiz" class="page">
+<h2>Quiz PKn</h2>
+
+<div id="quizBox"></div>
+<button onclick="nextQuestion()">Soal Berikutnya</button>
+
+<h3 id="score"></h3>
+
+</section>
+
+<section id="sertifikat" class="page">
+<h2>Sertifikat Kelulusan</h2>
+
+<input type="text" id="nama" placeholder="Masukkan Nama Anda">
+<button onclick="generateCertificate()">Buat Sertifikat</button>
+
+<div id="certificate">
+<h2>SERTIFIKAT</h2>
+<p>Diberikan kepada</p>
+<h3 id="namaSertifikat"></h3>
+<p>Telah menyelesaikan Modul Interaktif PKn</p>
+</div>
+
+</section>
+
+</main>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
